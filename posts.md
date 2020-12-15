@@ -8,3 +8,5 @@ sidebar_link: true
 <a href="{{ post.url | relative_url }}">{{post.title}}</a>
 {{post.excerpt}}
 {% endfor %}
+
+    
