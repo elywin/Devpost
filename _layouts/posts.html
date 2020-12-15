@@ -9,8 +9,10 @@ layout: default
  
 
   <div class="post-body">
-    {{ content }}
-   
+{% for post in site.posts %}
+<a href="{{ post.url | relative_url }}">{{post.title}}</a>
+{{post.excerpt}}
+{% endfor %}
   </div>
   
   {% include related_posts.html %}
