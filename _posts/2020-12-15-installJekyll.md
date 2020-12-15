@@ -2,6 +2,10 @@
 layout: post
 title: Install Jekyll (Ubuntu)
 ---
+Jekyll is a static site generator for personal, project, or organization sites that transforms plain text into static websites and blogs.
+
+**Installation**
+
 Install Ruby and other prerequisites: 
 
     sudo apt-get install ruby-full build-essential zlib1g-dev
