@@ -12,7 +12,7 @@ Install Ruby and other prerequisites:
 
 > Avoid installing RubyGems packages (called gems) as the root user. Instead, set up a gem installation directory for your user account. 
 
-Add environment variables to your **~/.bashrc** file to configure the gem installation path:
+Add environment variables to your `~/.bashrc` file to configure the gem installation path:
 
     echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
     echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
