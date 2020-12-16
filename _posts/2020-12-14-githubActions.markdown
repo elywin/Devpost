@@ -72,6 +72,6 @@ If all goes well, all steps will be green and the built assets will now exist on
 
 When you need to make further changes to the site, commit to master and push. The workflow will build and deploy your site again.
 
-> Do not to edit the gh-pages branch directly, as any changes will be lost on the next successful deploy from the Action.
+> **`Do not to edit the gh-pages branch directly, as any changes will be lost on the next successful deploy from the Action`**.
 
 
