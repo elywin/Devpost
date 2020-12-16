@@ -60,8 +60,8 @@ Create authentication token: -
 6. Check `repo` checkbox to give access to the entire repository scope.(necessary for the action to commit to the gh-pages branch).
 7. Generate token and copy the token.
 8. Go to your `repository’s Settings` and then the `Secrets` tab.
-9. Select new repository secret 
-10. Create a token named JEKYLL_PAT
+9. Select new repository secret. 
+10. Create a token named JEKYLL_PAT.
 11. Paste the token(copied earlier) and save.
 
 On pushing any local changes onto master, the action will be triggered and the build will start.To watch the progress and see any build errors, check on the build status using the `Action` tab on your repository.
