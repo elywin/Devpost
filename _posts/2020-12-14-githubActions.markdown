@@ -20,8 +20,9 @@ GitHub Actions are registered for a repository by using a `YAML` file inside the
 > note the dot at the start `.github/workflows`. 
 
 Create a YAML workflow file called `github-pages.yml` in the workflow directory. These are the contents of the file:
+<span style="backgroundcolor:blue"></span>
 
-{% highlight ruby %}
+```yaml
 name: Build and deploy Jekyll site to GitHub Pages
 
 on:
@@ -38,7 +39,8 @@ jobs:
         env:
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
 
-{% endhighlight %}
+```
+
 
 * The build is triggered using `on,push` condition to the master branch only preventing the Action from overwriting the gh-pages branch.
 * The name of the job matches our YAML filename: `github-pages`.
