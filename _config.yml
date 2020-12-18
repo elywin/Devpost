@@ -21,7 +21,7 @@
 title: Elywin Michael Lukeera
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Full-Stack developer, Lets talk Javascript, Reactjs, nodejs, mongoDB, laravel
+  Full-Stack developer, Lets talk Reactjs, nodejs, mongoDB, laravel
 baseurl: "/elywin.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
