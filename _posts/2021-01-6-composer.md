@@ -129,7 +129,7 @@ php composer.phar update --with vendor/package:2.0.1
 ```
 
 **Where do the packages/dependecies come from for you to use in your project?**<br>
-The packages you use in your projects are imported from a composer package repository, `Packagist`. It lets you find packages and lets Composer know where to get the code from. 
+The packages you use in your projects are imported from a composer package repository, [Packagist](https://packagist.org/). It lets you find packages and lets Composer know where to get the code from. 
 
 
 >You can find the packagist.org source on:[Github](https://github.com/composer/packagist).
