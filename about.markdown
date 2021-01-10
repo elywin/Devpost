@@ -13,6 +13,8 @@ Web Development: -
 - Nodejs
 - MongoDB
 - Laravel
+## Other
+- Version control
 
 ## Contact
 
