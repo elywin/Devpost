@@ -15,6 +15,7 @@ Web Development: -
 - Laravel
 ## Other
 - Version control
+- Wordpress
 
 ## Contact
 
