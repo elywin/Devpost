@@ -103,8 +103,7 @@ $ls -l add.tcl
 -rw-r--rwx  1 elywin elywin       48 Oct  4 03:01  add.tcl
 ```
 
-**Using chmod with Absolute Permissions(integers/binary reference)**
-
+**Using chmod with Absolute Permissions(integers/binary reference)**<br>
 The second way to modify permissions with the chmod command is to use a number to specify each set of permissions for the file. Each permission is assigned a value, and the total of each set of permissions provides a number for that set.
 
 | --- | --- | --- |
@@ -142,4 +141,34 @@ $ls -l add.tcl
 ```
 
 **Changing Owners and Groups**
+
+While creating an account on Unix, it assigns a owner ID and a group ID to each user. All the permissions mentioned above are also assigned based on the Owner and the Groups.
+
+Two commands are used to change the owner and the group of files or folders:<br>
+- chown 
+- chgrp 
+
+**chown command**<br>
+The `chown` command stands for "change owner" and is used to change the owner of a file or folder.
+
+$ chown `user/userid` `filename/foldername`
+
+> $ chown mike add.tcl
+
+Changes the owner of the add.tcl file to the user mike.
+
+**Chgrp command**<br>
+The `chgrp` command stands for "change group" and is used to change the group of a file or folder.
+
+$ chgrp `groupname` `filename/foldername`
+
+The value of group can be the name of a group on the system or the group ID (GID) of a group on the system.
+
+> $ chgrp special add.tcl
+
+Changes the group of the add.tcl file to special group.
+
+
+> `The super user, root, has the unrestricted capability to change the ownership of any file or folder but normal users can change the ownership of only those files or folders that they own.`
+
 
