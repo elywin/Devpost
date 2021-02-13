@@ -28,20 +28,20 @@ You can view the permissions of a file or directory by using the ls -l command.
 
 ```
 $ls -l 
--rw-r--r--  1 elywin elywin       48 Oct  4 03:01  add.tcl
-drwxrwxr-x  3 elywin elywin     4096 Jul 22  2020  data
+-rw-r--r--  1 elywin mike       48 Oct  4 03:01  add.tcl
+drwxrwxr-x  3 elywin mike     4096 Jul 22  2020  data
 ```
 
 The first character indicates whether the item is a file or a directory. A dash “ - “ means that the item is a file, whereas a “d” means it’s a directory. 
 
-> drwxrwxr-x  3 elywin elywin     4096 Jul 22  2020  data
+> drwxrwxr-x  3 elywin mike     4096 Jul 22  2020  data
 
 - “data” is a folder
 - “add.tcl” is a file
 
 The next three characters are the permissions of the file’s owner. The owner is usually the user who created the file and has the most control over it. 
 
-> drwxrwxr-x  3 elywin elywin     4096 Jul 22  2020  data
+> drwxrwxr-x  3 elywin mike    4096 Jul 22  2020  data
 
 |---|---|---|
 | U | G | O |
@@ -76,7 +76,7 @@ Here's an example using add.tck. Running ls -1 on the add.tcl file shows that
 
 ```
 $ls -l add.tcl
--rw-r--r-x  1 elywin elywin       48 Oct  4 03:01  add.tcl
+-rw-r--r-x  1 elywin mike       48 Oct  4 03:01  add.tcl
 ```
 
 Then each example chmod command run on the add.tcl, followed by ls –l, so you can see the permission changes:
@@ -84,15 +84,15 @@ Then each example chmod command run on the add.tcl, followed by ls –l, so y
 ```
 $chmod u+x add.tcl
 $ls -l add.tcl
--rwxr--r-x  1 elywin elywin       48 Oct  4 03:01  add.tcl
+-rwxr--r-x  1 elywin mike      48 Oct  4 03:01  add.tcl
 
 $chmod o-x add.tcl
 $ls -l add.tcl
--rwxr--r--  1 elywin elywin       48 Oct  4 03:01  add.tcl
+-rwxr--r--  1 elywin mike       48 Oct  4 03:01  add.tcl
 
 $chmod g = wx add.tcl
 $ls -l add.tcl
--rwxrwxr--  1 elywin elywin       48 Oct  4 03:01  add.tcl
+-rwxrwxr--  1 elywin mike      48 Oct  4 03:01  add.tcl
 ```
 
 You can combine these commands on a single line:
@@ -100,7 +100,7 @@ You can combine these commands on a single line:
 ```
 $chmod g-wx,u-x,o = wx add.tcl
 $ls -l add.tcl
--rw-r--rwx  1 elywin elywin       48 Oct  4 03:01  add.tcl
+-rw-r--rwx  1 elywin mike      48 Oct  4 03:01  add.tcl
 ```
 
 **Using chmod with Absolute Permissions(integers/binary reference)**<br>
@@ -121,7 +121,7 @@ Here's an example using add.tcl file. Running ls -1 on the add.tcl file shows
 
 ```
 $ls -l add.tcl
--rw-r--r-x  1 elywin elywin       48 Oct  4 03:01  add.tcl
+-rw-r--r-x  1 elywin mike       48 Oct  4 03:01  add.tcl
 ```
 
 Then each example chmod command run on the add.tcl, followed by ls –l, so you can see the permission changes:
@@ -129,15 +129,15 @@ Then each example chmod command run on the add.tcl, followed by ls –l, so y
 ```
 $ chmod 755 add.tcl
 $ls -l add.tcl
--rwxr-xr-x  1 elywin elywin       48 Oct  4 03:01  add.tcl
+-rwxr-xr-x  1 elywin mike       48 Oct  4 03:01  add.tcl
 
 $chmod 743 testfile
 $ls -l add.tcl
--rwxr---wx  1  elywin elywin       48 Oct  4 03:01  add.tcl
+-rwxr---wx  1  elywin mike       48 Oct  4 03:01  add.tcl
 
 $chmod 043 add.tclk
 $ls -l add.tcl
-----r---wx  1  elywin elywin       48 Oct  4 03:01  add.tcl
+----r---wx  1  elywin mike      48 Oct  4 03:01  add.tcl
 ```
 
 **Changing Owners and Groups**
@@ -153,22 +153,40 @@ The `chown` command stands for "change owner" and is used to change the owne
 
 $ chown `user/userid` `filename/foldername`
 
-> $ chown mike add.tcl
+```
+$ls -l add.tcl
+-rw-r--r-x  1 elywin mike       48 Oct  4 03:01  add.tcl
+```
+The value of user can be the name of a user or the user ID on the system.
 
-Changes the owner of the add.tcl file to the user mike.
+> $ chown michael add.tcl
+
+Changes the owner of the add.tcl file to the user michael from elywin.
+
+```
+$ls -l add.tcl
+-rw-r--r-x  1 michael mike       48 Oct  4 03:01  add.tcl
+```
 
 **Chgrp command**<br>
 The `chgrp` command stands for "change group" and is used to change the group of a file or folder.
 
 $ chgrp `groupname` `filename/foldername`
 
-The value of group can be the name of a group on the system or the group ID (GID) of a group on the system.
+```
+$ls -l add.tcl
+-rw-r--r-x  1 elywin mike       48 Oct  4 03:01  add.tcl
+```
+
+The value of group can be the name of a group or the group ID (GID) of a group on the system.
 
 > $ chgrp special add.tcl
 
-Changes the group of the add.tcl file to special group.
+Changes the group of the add.tcl file to special group from mike.
 
+```
+$ls -l add.tcl
+-rw-r--r-x  1 elywin special       48 Oct  4 03:01  add.tcl
+```
 
 > `The super user, root, has the unrestricted capability to change the ownership of any file or folder but normal users can change the ownership of only those files or folders that they own.`
-
-
