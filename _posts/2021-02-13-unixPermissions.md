@@ -8,7 +8,7 @@ Every file and folder on the system has a set of permissions that specifies who 
 Each may belong to three user based permission groups (UGO):
 - User/Owner permissions (U) − The owner's permissions determine what actions the owner of the file can perform on the file, they will not impact the actions of other users.(eg. Root, elywin, michael)
 - Group permissions (G)− The group's permissions determine what actions a user, who is a member of the group that a file belongs to, can perform on the file, they will not effect the actions of other users.(e.g. sudo, admin, docker)
-- Other (world) permissions (O)− The permissions for others indicate what action all other users can perform on the file.(e.g. non-owner and non-group members)
+- Others permissions (O)− The permissions for others indicate what action all other users can perform on the file.(e.g. non-owner and non-group members)
 
 There are three types of permissions:<br>
 - read(r)
@@ -43,43 +43,34 @@ The next three characters are the permissions of the file’s owner. The owner i
 
 > drwxrwxr-x  3 elywin elywin     4096 Jul 22  2020  data
 
-U	G	O
-rwx	rwx	r-x
+|---|---|---|
+| U | G | O |
+| rwx | rwx | r-x |
 
-User/Owner can read(r), write(w) and execute(x).
+- User/Owner can read(r), write(w) and execute(x).
 
 The next three characters are the permissions of the owner’s group.
 
-> drwxrwxr-x  3 elywin elywin     4096 Jul 22  2020  data
+- Group can read(r), and write(w).
 
-U	G	O
-rwx	rw-	rw-
+The final three are the permissions for others/everyone else.
 
-Group can read(r), and write(w).
-
-The final three are the permissions for everyone else.
-
-> drwxrwxr-x  3 elywin elywin     4096 Jul 22  2020  data
-
-U	G	O
-rwx	rwx	r-x
-
-Others can read(r), and execute(x).
-
+- Others can read(r), and execute(x).
 
 > `R indicates read, w indicates write, and X indicates execute. And a dash indicates the lack of that permission except for the first dash that indicates a file or directory/folder.`
 
-Changing Permissions
+**Changing Permissions**
+
 To change the file or the directory permissions, you use the chmod (change mode) command,  there are two ways to use chmod command, the symbolic mode and the absolute mode(use binary references/ numbers ).
 
-Using chmod in Symbolic Mode
+**Using chmod in Symbolic Mode**<br>
  With symbolic permissions you can add, delete, or specify the permission set you want by using the operators “ +, - , = ”.
 
-+ : Adds the designated permission(s) to a file or directory.
-
-- : Removes the designated permission(s) from a file or directory.
-
-= : Sets the designated permission(s).
+|---|---|
+| operator | permission description |
+| + |Adds the designated permission(s) to a file or directory.|
+|-| Removes the designated permission(s) from a file or directory.|
+|=| Sets the designated permission(s).|
 
 Here's an example using add.tck. Running ls -1 on the add.tcl file shows that the file's permissions are as follows:
 
@@ -116,14 +107,16 @@ $ls -l add.tcl
 
 The second way to modify permissions with the chmod command is to use a number to specify each set of permissions for the file. Each permission is assigned a value, and the total of each set of permissions provides a number for that set.
 
-0 : no permission  ---
-1 : execute  permission  --x
-2 : write  permission  -w-
-3 : execute and write permission: 1(x) + 2(w) = 3  -wx
-4 : read permission  r--
-5 : read and execute permission: 4(r) + 1(x) = 5  r-x
-6: read and write permission: 4(r) + 2(w) = 6 rw-
-7: all permissions (4)read + write(w) + execute(x) = 7 rwx
+| --- | --- | --- |
+| number | permission | ref |
+| 0 | no permission | - - - |
+| 1 | execute  permission | - - x |
+| 2 | write  permission | - w - |
+| 3 | execute and write permission: 1(x) + 2(w) = 3 | - w x |
+| 4 | read permission | r - - |
+| 5 | read and execute permission: 4(r) + 1(x) = 5 | r - x |
+| 6 | read and write permission: 4(r) + 2(w) = 6 | r w - |
+| 7 | all permissions (4)read + write(w) + execute(x) = 7 | r w x |
 
 Here's an example using add.tcl file. Running ls -1 on the add.tcl file shows that the file's permissions are as follows:
 
@@ -149,5 +142,4 @@ $ls -l add.tcl
 ```
 
 **Changing Owners and Groups**
-
 
