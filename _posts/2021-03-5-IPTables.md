@@ -1,0 +1,158 @@
+---
+layout: post
+title: IP Tables
+---
+**What is IP-Tables, and How Does It Work?**<br>
+iptables is a utility program (uses policy chains) that allows a system administrator to configure rules of the Linux kernel firewall to allow or block traffic.
+
+**IP-Tables architecture**<br>
+Each table contains a number of built-in chains and may also contain user-defined chains. Each chain is a list of rules which can match a set of packets. Each rule specifies what to do with a packet that matches.
+
+IP-Tables consists of different components as listed below:
+
+**Chains:** Chains are a list of rules responsible for packets, they allow the administrator to control where in a packet’s delivery path a rule will be evaluated.
+
+There are 5 chains in iptables and each is responsible for a specific task:
+1. **Prerouting:** This chain decides what happens to a packet as soon as it arrives at the network interface, altering the packet, dropping the packet, or doing nothing at all.
+2. **Input:** This chain is responsible for opening or blocking a port.
+3. **Forward:** This chain is responsible for packet forwarding as the name suggests.
+4. **Output:** This chain is in charge or all your browsing, with this chain you can allow a port to send or not to send any of your outbound traffic especially if you’re not sure what port each application is communicating through.
+5. **Postrouting:** This cahin allows altering packets after they exit the OUTPUT chain just before leaving the computer..
+
+**Tables:** <br>
+ The table list contains filter, nat, mangle, raw and security. Each table is responsible for a specific task as we are going to see below:<br>
+1. **Filter table:** This is the default table.It contains the built-in chains INPUT, FORWARD, and OUTPUT. In this table is where you decide whether a packet is allowed in/out of your computer. If you want to block a port to stop receiving anything, this is where you do it.
+2. **Nat table:** This table is responsible for creating new connection when a packet that creates a new connection is encountered.  It consists of three built-in chains: PREROUTING, OUTPUT, and POSTROUTING.
+3. **Mangle table:** This table is responsible for specialized packets only. it changes or ulters something inside the packet either before coming in or leaving. It consists of PREROUTING, OUTPUT, INPUT, FORWARD, and POSTROUTING built-in chains.
+4. **Raw:** This table is deals with the raw packet, it for tracking the connection state. It contains the following built-in chains: PREROUTING, OUTPUT.
+5. **Security:** It is responsible for securing your computer after the filter table. Which consists of SELinux a security tool on modern linux distributions. 
+
+**Targets:** 
+Targets specify where a packet should go using either iptables' own targets or it’s extensions’ target. Targets are divided into terminating and non-terminating.
+
+Terminating targets, decide the result of the matched packet and it will stop there, the packet won’t be matched against any other rules. The commonly used terminating targets are:
+
+**ACCEPT:** This enables the iptables to accept the packet.<br>
+**DROP:** iptables drops the packet. To anyone trying to connect to your system, it would appear like the system didn’t even exist.<br>
+**REJECT:** iptables rejects the packet. It sends a connection reset packet in case of TCP, or a destination host unreachable packet in case of [UDP](https://www.geeksforgeeks.org/user-datagram-protocol-udp/) or [ICMP](https://www.cloudflare.com/en-gb/learning/ddos/glossary/internet-control-message-protocol-icmp/).
+
+On the other hand, there are non-terminating targets, which keep matching other rules even if a match was found for
+example the built-in **LOG** target which logs about a packet when recieved in the kernel logs but the iptables keeps matching it with other rules.
+
+**A quick refresher, What is firewall?**<br>
+ Firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules established as a barrier between a trusted network and an untrusted network, such as the Internet.<br>
+
+**How to use IP-Tables?**<br>
+Now that we know what IP-Tables are and with that quick reminder about what a firewall is, lets see how to use them.<br>
+> **Note:** run these commands as super user.
+
+To list the current configuration:
+
+> $sudo iptables -L -n -v --line-numbers
+
+
+Where;
+**-L** for list.<br>
+**-n** for numeric output.<br>
+**-v** for verbose.<br>
+
+
+To stop every single packet from going in/out of your system. This stops any other packet that you explicitly specify is going to be transferred.
+
+```
+$sudo iptables -P INPUT DROP
+$sudo iptables -P OUTPUT DROP
+$sudo iptables -P FORWARD DROP
+```
+
+**-P** for policy(INPUT, OUTPUT, FORWARD).
+
+To allow packets inside your loopback interface to travel without problem.
+
+```
+$sudo iptables -A INPUT -i lo -j ACCEPT
+$sudo iptables -A OUTPUT -o lo -j ACCEPT
+```
+
+**-A** for append. You can also insert, delete or update with different switches.<br>
+**-i** for input interface. The interface that packets arrive at.<br>
+**-o** for output interface. The interface the packets travel through.<br>
+**-j** for jump. You can choose to accept, reject, drop, log etc. with a packet.<br>
+
+To allow DNS & DHCP packets to travel in & out your computer.
+
+```
+$sudo iptables -A INPUT -p udp --dport 67 -j ACCEPT
+$sudo iptables -A INPUT -p tcp --dport 67 -j ACCEPT
+$sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+$sudo iptables -A OUTPUT -p tcp --dport 53 -j ACCEPT
+$sudo iptables -A OUTPUT -p udp --dport 68 -j ACCEPT
+$sudo iptables -A OUTPUT -p tcp --dport 68 -j ACCEPT
+```
+
+**-p** for protocol. 
+>**Note:** For larger packets TCP is used.
+
+**--dport** for destination port.
+
+To open SSH connection when your computer is a client.
+
+```
+$sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
+$sudo iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+```
+
+**-m** is a switch to use iptables’ extension ([iptables-extension](http://manpages.ubuntu.com/manpages/hirsute/man8/iptables-extensions.8.html))
+
+To allow SSH connection when your computer is a server.
+
+```
+$sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+$sudo iptables -A OUTPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+```
+
+To be able to ping other computers, and let other computers ping yours, allow icmp packets.
+
+```
+$sudo iptables -A INPUT -p icmp -j ACCEPT
+$sudo iptables -A OUTPUT -p icmp -j ACCEPT
+```
+
+To browse web pages.
+
+```
+$sudo iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
+$sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
+```
+This will open both HTTP and HTTPS traffic to go out of your system.
+
+To apply NAT to your iptables.
+
+```
+$sudo iptables -t nat -A OUTPUT -p tcp --dport 22 --destination destination_IP -j DNAT --to-destination 123.123.123.123:4040
+```
+
+**--destination** flag will filter packets based on the destination IP address.
+
+All outgoing traffic from your computer heading to IP address destination_IP port 22 will be sent to IP address 123.123.123.123 port 4040. This makes it possible for a NAT in the destination network to be accessible from outside that network.
+
+To forward every traffic from a specific interface to be routed through your computer without changing anything inside packet.
+
+runtime configuration:<br>
+>$sudo sysctl net.ipv4.ip_forward=1 
+
+persistency across reboots:<br>
+>$sudo echo net.ipv4.ip_forward = 1 > /etc/sysctl.d/30-ip-forward.conf
+
+```
+$sudo iptables -A FORWARD -i wlan0 -j ACCEPT
+$sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
+
+Those are but a few commands to get started with IP-Tables, to get more about them:
+
+```
+$ man iptables
+$ man iptables-extension
+```
+
