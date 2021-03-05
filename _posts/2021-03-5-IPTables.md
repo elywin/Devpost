@@ -44,7 +44,115 @@ example the built-in **LOG** target which logs about a packet when recieved in t
 
 **How to use IP-Tables?**<br>
 Now that we know what IP-Tables are and with that quick reminder about what a firewall is, lets see how to use them.<br>
+> **Note:** run these commands as super user.
+
+To list the current configuration:
+
+> $sudo iptables -L -n -v --line-numbers
 
 
+Where;
+**-L** for list.<br>
+**-n** for numeric output.<br>
+**-v** for verbose.<br>
 
+
+To stop every single packet from going in/out of your system. This stops any other packet that you explicitly specify is going to be transferred.
+
+```
+$sudo iptables -P INPUT DROP
+$sudo iptables -P OUTPUT DROP
+$sudo iptables -P FORWARD DROP
+```
+
+**-P** for policy(INPUT, OUTPUT, FORWARD).
+
+To allow packets inside your loopback interface to travel without problem.
+
+```
+$sudo iptables -A INPUT -i lo -j ACCEPT
+$sudo iptables -A OUTPUT -o lo -j ACCEPT
+```
+
+**-A** for append. You can also insert, delete or update with different switches.<br>
+**-i** for input interface. The interface that packets arrive at.<br>
+**-o** for output interface. The interface the packets travel through.<br>
+**-j** for jump. You can choose to accept, reject, drop, log etc. with a packet.<br>
+
+To allow DNS & DHCP packets to travel in & out your computer.
+
+```
+$sudo iptables -A INPUT -p udp --dport 67 -j ACCEPT
+$sudo iptables -A INPUT -p tcp --dport 67 -j ACCEPT
+$sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+$sudo iptables -A OUTPUT -p tcp --dport 53 -j ACCEPT
+$sudo iptables -A OUTPUT -p udp --dport 68 -j ACCEPT
+$sudo iptables -A OUTPUT -p tcp --dport 68 -j ACCEPT
+```
+
+**-p** for protocol. 
+>**Note:** For larger packets TCP is used.
+
+**--dport** for destination port.
+
+To open SSH connection when your computer is a client.
+
+```
+$sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
+$sudo iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+```
+
+**-m** is a switch to use iptables’ extension ([iptables-extension](http://manpages.ubuntu.com/manpages/hirsute/man8/iptables-extensions.8.html))
+
+To allow SSH connection when your computer is a server.
+
+```
+$sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+$sudo iptables -A OUTPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+```
+
+To be able to ping other computers, and let other computers ping yours, allow icmp packets.
+
+```
+$sudo iptables -A INPUT -p icmp -j ACCEPT
+$sudo iptables -A OUTPUT -p icmp -j ACCEPT
+```
+
+To browse web pages.
+
+```
+$sudo iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
+$sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
+```
+This will open both HTTP and HTTPS traffic to go out of your system.
+
+To apply NAT to your iptables.
+
+```
+iptables -t nat -A OUTPUT -p tcp --dport 22 --destination destination_IP -j DNAT --to-destination 123.123.123.123:4040
+```
+
+**--destination** flag will filter packets based on the destination IP address.
+
+All outgoing traffic from your computer heading to IP address destination_IP port 22 will be sent to IP address 123.123.123.123 port 4040. This makes it possible for a NAT in the destination network to be accessible from outside that network.
+
+To forward every traffic from a specific interface to be routed through your computer without changing anything inside packet.
+
+runtime configuration:<br>
+>$sudo sysctl net.ipv4.ip_forward=1 
+
+persistency across reboots:<br>
+>$sudo echo net.ipv4.ip_forward = 1 > /etc/sysctl.d/30-ip-forward.conf
+
+```
+$sudo iptables -A FORWARD -i wlan0 -j ACCEPT
+$sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
+
+Those are but a few commands to get started with IP-Tables, to get more about them:
+
+```
+$ man iptables
+$ man iptables-extension
+```
 
