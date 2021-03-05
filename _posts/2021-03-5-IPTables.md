@@ -129,7 +129,7 @@ This will open both HTTP and HTTPS traffic to go out of your system.
 To apply NAT to your iptables.
 
 ```
-iptables -t nat -A OUTPUT -p tcp --dport 22 --destination destination_IP -j DNAT --to-destination 123.123.123.123:4040
+$sudo iptables -t nat -A OUTPUT -p tcp --dport 22 --destination destination_IP -j DNAT --to-destination 123.123.123.123:4040
 ```
 
 **--destination** flag will filter packets based on the destination IP address.
