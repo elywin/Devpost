@@ -23,7 +23,7 @@ email: lukeeraelywin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Full-Stack developer, Lets talk Reactjs, nodejs, mongoDB, laravel
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "elywin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://elywin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 remote_theme: fongandrew/hydeout
@@ -31,6 +31,7 @@ remote_theme: fongandrew/hydeout
 theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
+  -jekyll-remote-theme
 
 sidebar_home_link:  true
 # Exclude from processing.
