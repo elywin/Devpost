@@ -31,7 +31,6 @@ remote_theme: fongandrew/hydeout
 theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
-  -jekyll-remote-theme
 
 sidebar_home_link:  true
 # Exclude from processing.
