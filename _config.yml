@@ -22,7 +22,7 @@ title: Elywin Michael Lukeera
 email: lukeeraelywin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Full-Stack developer, Lets talk Reactjs, nodejs, mongoDB, laravel
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://elywin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
