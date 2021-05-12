@@ -22,3 +22,10 @@ The purpose is to validate that each unit of the software code performs as expec
 
 Under the automated approach-<br>
 A coder uses a UnitTest Framework to develop automated test cases. Using an automation framework, the developer codes criteria into the test to verify the correctness of the code. During execution of the test cases, the framework logs failing test cases and also automatically flag and report these failed test cases. Depending on the severity of a failure, the framework may halt subsequent testing.
+
+**Unit Testing Techniques**
+- [Black Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/black_box_testing.htm) - involves testing of user interface along with input and output.
+
+[White Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/white_box_testing.htm) - involves testing the functional behaviour of the software application.
+
+[Gray Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/grey_box_testing.htm) - used to execute test suites, test methods, test cases and performing risk analysis.
