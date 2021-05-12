@@ -38,3 +38,12 @@ A coder uses a UnitTest Framework to develop automated test cases. Using an auto
 - [JMockit](http://jmockit.github.io/index.html):  JMockit is open source Unit testing tool. 
 - [Junit](https://www.guru99.com/junit-tutorial.html): Junit is a free to use testing tool used for Java programming language.
 -[EMMA](http://emma.sourceforge.net/):  EMMA is an open-source toolkit for analyzing and reporting code written in Java language.
+
+**Unit Testing Best Practices**
+
+- Unit Test cases should be independent. In case of any enhancements or change in requirements, unit test cases should not be affected.
+- Test only one code at a time.
+- Follow clear and consistent naming conventions for your unit tests
+- In case of a change in code in any module, ensure there is a corresponding unit Test Case for the module, and the module passes the tests before changing the implementation
+- Bugs identified during unit testing must be fixed before proceeding to the next phase in SDLC
+- Adopt a "test as your code" approach. The more code you write without testing, the more paths you have to check for errors.
