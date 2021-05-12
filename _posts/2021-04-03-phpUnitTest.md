@@ -24,8 +24,17 @@ Under the automated approach-<br>
 A coder uses a UnitTest Framework to develop automated test cases. Using an automation framework, the developer codes criteria into the test to verify the correctness of the code. During execution of the test cases, the framework logs failing test cases and also automatically flag and report these failed test cases. Depending on the severity of a failure, the framework may halt subsequent testing.
 
 **Unit Testing Techniques**
+
 - [Black Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/black_box_testing.htm) - involves testing of user interface along with input and output.
 
-[White Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/white_box_testing.htm) - involves testing the functional behaviour of the software application.
+- [White Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/white_box_testing.htm) - involves testing the functional behaviour of the software application.
 
-[Gray Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/grey_box_testing.htm) - used to execute test suites, test methods, test cases and performing risk analysis.
+- [Gray Box Testing](https://www.tutorialspoint.com/software_testing_dictionary/grey_box_testing.htm) - used to execute test suites, test methods, test cases and performing risk analysis.
+
+**Unit Testing Tools**
+
+- [PHPUnit](https://phpunit.de/): PHPUnit is a unit testing tool for PHP language.
+- [NUnit](https://nunit.org/):  NUnit is widely used unit-testing framework use for all .net languages.
+- [JMockit](http://jmockit.github.io/index.html):  JMockit is open source Unit testing tool. 
+- [Junit](https://www.guru99.com/junit-tutorial.html): Junit is a free to use testing tool used for Java programming language.
+-[EMMA](http://emma.sourceforge.net/):  EMMA is an open-source toolkit for analyzing and reporting code written in Java language.
