@@ -8,14 +8,16 @@ permalink: /about/
 Elywin Michael Lukeera, A full-stack Developer , a lifelong student of society seeking a fresh challenge for growth in the realm of technology.
 
 ## Skills
-Web Development: -
+Full Stack Developer: -
 - Reactjs
 - Nodejs
 - MongoDB
 - Laravel
+- Django
 ## Other
 - Version control
 - Wordpress
+- ASP.NET
 
 ## Contact
 
