@@ -9,10 +9,10 @@ The purpose is to validate that each unit of the software code performs as expec
 
 **Why Unit Testing?**
 
-- Unit tests help to fix bugs early in the development cycle and save costs.
+- Unit tests help to fix bugs early in the development cycle and save costs( test parts of the project without waiting for others to be completed).
 - It helps the developers to understand the testing code base and enables them to make changes quickly
 - Good unit tests serve as project documentation
-- Unit tests help with code re-use. Migrate both your code and your tests to your new project. Tweak the code - until the tests run again.
+- Unit Testing allows developers to learn what functionality is provided by a unit and how to use it to gain(code re-use).
 
 **Types of unit testing**
 - Manual
