@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHPUnit Test (laravel)
+title: Unit Testing
 ---
 **What is Unit Testing?**<br>
 UNIT TESTING is a type of software testing where individual units or components of a software are tested.
