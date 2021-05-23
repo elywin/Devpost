@@ -74,3 +74,41 @@ Verify your Django installation:
 
 > django-admin --version
 
+With Django installed, we can now creat a test project to make sure everything is working correctly.
+
+**Step 4 — create project**
+To create a project run the following command:
+
+> django-admin startproject djangoprojectname
+
+Move into the project directory
+
+> cd djangoprojectname
+
+Create the django app
+
+> pyhton3 manage.py startapp app_name
+
+Once that is done, go to settings.py file, under INSTALLED _APPS add 'app_name'
+
+Run the migrate command to setup the databse:
+
+> python manage.py migrate
+
+Create super user(for accessing the database):
+
+> python manage.py createsuperuser
+
+Now we can run the server to see our output
+
+> pyhton3 manage.py runserver
+
+Navigate to the link below in the browser to see the output:
+
+> http://your-server-ip:8000/
+
+When you are done with testing your app, you can press CTRL + C to stop the runserver command.
+
+When you are ready to leave your Python environment, run the deactivate command:
+
+> deactivate
