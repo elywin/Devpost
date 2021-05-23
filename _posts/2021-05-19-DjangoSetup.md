@@ -111,6 +111,10 @@ Navigate to the link below in the browser to see the output:
 
 <img src="/svg/djangotest.png" width="1000" >
 
+To access the admin dashboard, add admin to the url:
+
+> http://127.0.0.1:8000/admin
+
 
 When you are done with testing your app, you can press CTRL + C to stop the runserver command.
 
