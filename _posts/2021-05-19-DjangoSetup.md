@@ -42,3 +42,35 @@ To install virtualenv, we will use the pip3.
 
 > pip3 install virtualenv
 
+**Step 3 — install Django**
+
+**Note:** We’ll be installing Django using pip within a virtual environment.
+
+First we create a directory that will contain our django application.
+
+> mkdir django-app
+
+Second, we move into our newly created directory. 
+
+> cd django-apps
+
+Third, inside the django-apps directory, create your virtual environment called `my_env`.
+
+> virtualenv my_env
+
+Now, activate the virtual environment:
+
+> source my_env/bin/activate
+
+You’ll know the virtual environment is activated once the prefix is changed to (env), which will look similar to the following depending on what directory you are in:
+
+> (my_env)elywin@elywin:~/projects/blog$ 
+
+Now that we are in the virtual environment, install the Django package using pip.
+
+> pip install django
+
+Verify your Django installation:
+
+> django-admin --version
+
