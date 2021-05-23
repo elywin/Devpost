@@ -91,6 +91,8 @@ Create the django app
 
 Once that is done, go to settings.py file, under INSTALLED _APPS add 'app_name'
 
+<img src="/svg/settings.png" width="1000" >
+
 Run the migrate command to setup the databse:
 
 > python manage.py migrate
@@ -105,7 +107,10 @@ Now we can run the server to see our output
 
 Navigate to the link below in the browser to see the output:
 
-> http://your-server-ip:8000/
+> http://127.0.0.1:8000/
+
+<img src="/svg/djangotest.png" width="1000" >
+
 
 When you are done with testing your app, you can press CTRL + C to stop the runserver command.
 
