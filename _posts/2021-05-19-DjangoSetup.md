@@ -13,6 +13,15 @@ To set up a Django development environment, We are going to install `Python 3`, 
 
 **Step 1 — Setting Up Python 3**
 
-
 > $ sudo apt update<br>
 > $ sudo apt -y upgrade
+
+Once everything is updated, we can install Python 3:
+
+> sudo apt-get install python3
+
+To verify the successful installation of Python 3, run a version check:
+
+> python3 -V
+
+
