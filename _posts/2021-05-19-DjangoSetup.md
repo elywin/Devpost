@@ -24,4 +24,12 @@ To verify the successful installation of Python 3, run a version check:
 
 > python3 -V
 
+Now that we have Python 3 installed, we will also need pip in order to install packages from [PyPi](https://pypi.org/), Python’s package repository.
+
+> sudo apt-get install -y python3-pip
+
+To verify that pip was successfully installed, run a version check:
+
+> pip3 -V
+
 
