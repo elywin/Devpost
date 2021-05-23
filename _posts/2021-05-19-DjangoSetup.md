@@ -32,4 +32,13 @@ To verify that pip was successfully installed, run a version check:
 
 > pip3 -V
 
+**Step 2 — Install virtual environment**
+
+A virtual environment is a contained development space where you can install software and Python packages which isolates the installed software and packages from the rest of your machine’s global environment. 
+
+> `This prevents conflicting packages or software from interacting with each other.`
+
+To install virtualenv, we will use the pip3.
+
+> pip3 install virtualenv
 
