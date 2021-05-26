@@ -62,7 +62,7 @@ Now, activate the virtual environment:
 
 > source my_env/bin/activate
 
-You’ll know the virtual environment is activated once the prefix is changed to (env), which will look similar to the following depending on what directory you are in:
+You’ll know the virtual environment is activated once the prefix is changed to (my_env), which will look similar to the following depending on what directory you are in:
 
 > (my_env)elywin@elywin:~/projects/blog$ 
 
