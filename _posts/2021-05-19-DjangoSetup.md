@@ -103,7 +103,7 @@ Create super user(for accessing the database):
 
 Now we can run the server to see our output
 
-> pyhton3 manage.py runserver
+> python3 manage.py runserver
 
 Navigate to the link below in the browser to see the output:
 
