@@ -56,7 +56,7 @@ Second, we move into our newly created directory.
 
 Third, inside the django-apps directory, create your virtual environment called `my_env`.
 
-> virtualenv my_env
+> python -m venv my_env
 
 Now, activate the virtual environment:
 
