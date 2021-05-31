@@ -14,7 +14,7 @@ Responses are grouped in five classes:
 - Client errors (400–499): It means the request contains incorrect syntax or cannot be fulfilled.
 - Server errors (500–599): It means the server failed to fulfill an apparently valid request.
 
-Below is a list of all the status codes:
+Below is a list of some common http status codes:
 
 **Informational responses (100–199)**
 
