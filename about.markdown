@@ -13,9 +13,11 @@ Full Stack Developer: -
 - Laravel
 - Django
 - React-Native
+
 ## Database Management
 - MongoDB
 - MySQL
+
 ## Other
 - Version control
 - Wordpress
