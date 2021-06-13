@@ -1,4 +1,25 @@
 ---
 layout: post
-title: Deploying a Django Application on Heroku
+title: Deploying a Django Application using Heroku
 ---
+
+**Deploying a Django application using Heroku**<br>
+Before deploying the app we, we need to add a few configuration files and install some packages to run our app in the production environment.
+
+1. Add a Procfile in the project root directory to define process types and explicitly declare what command should be executed to start your app.
+
+> (my_env):~/Desktop/myDjangoapp$ touch Procfile
+
+
+Open the Procfile and add the line below.
+
+> web: gunicorn djangoherokuapp.wsgi
+
+**Note:**Change djangoherokuapp to the name of your project to point to the location of the wsgi.py file.
+
+Add the following line to the procfile too.
+
+> release: python manage.py migrate
+
+This line will migrate your database on heroku
+
