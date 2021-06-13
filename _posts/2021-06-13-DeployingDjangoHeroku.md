@@ -23,3 +23,11 @@ Add the following line to the procfile too.
 
 This line will migrate your database on heroku
 
+2. Add a runtime.txt file in the project root directory.
+
+>touch runtime.txt
+
+In the runtime.txt file add the following line specifying the correct Python version in regards to your django app environment.
+
+> python-3.9.2
+
