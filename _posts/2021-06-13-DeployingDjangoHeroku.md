@@ -37,6 +37,39 @@ In the runtime.txt file add the following line specifying the correct Python ver
 
 > pip install psycopg2-binary
 
-**Note** Check this [article](https://devcenter.heroku.com/articles/django-app-configuration) out to see why you need these pacakages 
+> pip install django-heroku
 
+**Note:** Check this [article](https://devcenter.heroku.com/articles/django-app-configuration) out to see why you need these pacakages 
+
+4. Add a requirements.txt file
+
+> pip freeze > requirements.txt
+
+**Note:**Heroku will recognize a deployed application as a Python application only if it has a requirements.txt file in the root directory. Even if your application has no module dependencies, it should include an empty requirements.txt file to indicate that your app has no dependencies.
+
+Your requirements.txt file should look like this:
+
+```
+asgiref==3.3.4
+dj-database-url==0.5.0
+Django==3.2
+django-heroku==0.3.1
+gunicorn==20.1.0
+psycopg2==2.8.6
+pytz==2021.1
+sqlparse==0.4.1
+whitenoise==5.2.0
+```
+
+5. Add the following import statement to the top of settings.py:
+
+> import django_heroku
+
+6. Then add the following to the bottom of settings.py to activate Django-Heroku.:
+
+> django_heroku.settings(locals())
+
+7. Then add the following in the settings.py‘s middleware section (at the top):
+
+> 'whitenoise.middleware.WhiteNoiseMiddleware',
 
