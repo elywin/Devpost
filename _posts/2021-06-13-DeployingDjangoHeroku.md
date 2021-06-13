@@ -8,7 +8,7 @@ Before deploying the app we, we need to add a few configuration files and instal
 
 1. Add a Procfile in the project root directory to define process types and explicitly declare what command should be executed to start your app.
 
-> (my_env):~/Desktop/myDjangoapp$ touch Procfile
+> touch Procfile
 
 
 Open the Procfile and add the line below.
@@ -30,4 +30,13 @@ This line will migrate your database on heroku
 In the runtime.txt file add the following line specifying the correct Python version in regards to your django app environment.
 
 > python-3.9.2
+
+3. Install the following packages in the environment
+
+> pip install gunicorn dj-database-url whitenoise
+
+> pip install psycopg2-binary
+
+**Note** Check this [article](https://devcenter.heroku.com/articles/django-app-configuration) out to see why you need these pacakages 
+
 
