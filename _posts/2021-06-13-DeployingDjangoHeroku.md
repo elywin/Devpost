@@ -97,3 +97,12 @@ In your terminal run the folloowing command, replace herokuappname with the name
 
 > heroku config:set DISABLE_COLLECTSTATIC=1 -a herokuappname
 
+13. create super user to have access to the admin dashboard
+
+Run the following command in your terminal, replace herokuappname with the name of the app you created on heroku:
+
+> heroku run python manage.py createsuperuser -a herokuappname
+
+You can still run the migration command in the terminal incase you dont add it to the procfile or make any changes to the models.
+
+> heroku run python manage.py migrate -a herokuappname
