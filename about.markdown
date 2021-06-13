@@ -7,7 +7,7 @@ permalink: /about/
 
 Elywin Michael Lukeera, A full-stack Developer , a lifelong student of society seeking a fresh challenge for growth in the realm of technology.
 
-## Languages & Frameworks
+## Technologies
 Full Stack Developer: -
 - ReactJs
 - Laravel
