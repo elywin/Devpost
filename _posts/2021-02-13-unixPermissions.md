@@ -4,7 +4,8 @@ title: Unix/Linux Permissions
 ---
 
 **Deep Dive Into Linux Permissions**<br>
-Every file and folder on the system has a set of permissions that specifies who is allowed to do what with that particular file or folder.<br>
+Every file and folder on the system has a set of permissions that specifies who is allowed to do what with that particular file or folder.
+
 Each may belong to three user based permission groups (UGO):
 - User/Owner permissions (U) − The owner's permissions determine what actions the owner of the file can perform on the file, they will not impact the actions of other users.(eg. Root, elywin, michael)
 - Group permissions (G)− The group's permissions determine what actions a user, who is a member of the group that a file belongs to, can perform on the file, they will not effect the actions of other users.(e.g. sudo, admin, docker)
