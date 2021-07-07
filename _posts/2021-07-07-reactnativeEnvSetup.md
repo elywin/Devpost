@@ -61,7 +61,7 @@ Update your package repository.
 
 > sudo apt update
 
-Install Oracle JDK 1.8(stable) atleast, recommended version for React Native Development but You can install multiple Java Installations in one machine.
+Install Oracle JDK 1.8(stable) atleast, recommended version for React Native Development but You can install multiple Java Installations in one machine. Java is already installed on the Ubuntu 20.04 system. Therefore, we do not need to install it on this system again.
 
 > sudo apt install oracle-java8-installer
 
@@ -72,4 +72,67 @@ We will need to set Java 1.8 as default.
 Verify java installation
 
 > javac --version
+
+4. Setup Android development environment
+
+Install AndroidStudio
+
+Download and install Android Studio. While on Android Studio installation wizard, make sure the boxes next to all of the following items are checked:
+
+- Android SDK
+- Android SDK Platform
+- Android Virtual Device
+
+Then, click "Next" to install all of these components.
+
+Once setup has finalized and you're presented with the Welcome screen, proceed to the next step.
+
+Install the Android SDK
+
+To do that, open Android Studio, click on "Configure" button and select `SDK Manager`.
+
+> **NB:**The SDK Manager can also be found within the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.
+
+Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the Android 10 (Q) entry, then make sure the following items are checked:
+
+- Android SDK Platform 29
+- Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
+
+Next, select the "SDK Tools" tab and check the box next to "Show Package Details" here as well. Look for and expand the "Android SDK Build-Tools" entry, then make sure that 29.0.2 is selected.
+
+Finally, click "Apply" to download and install the Android SDK and related build tools.
+
+Configure the ANDROID_HOME environment variable
+
+React Native tools require some environment variables to be set up in order to build apps with native code.
+
+Add the following lines to your `$HOME/.bash_profile` or `$HOME/.bashrc` (if you are using `zsh` then `~/.zprofile` or `~/.zshrc`) config file:
+
+Go to terminal and run command
+
+> $HOME/.bash_profile 
+
+> `Make sure you use the correct Android SDK path. You can find the actual location of the SDK in the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.`
+
+
+When the file opens add the following lines:
+
+```
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+ **NB:**If you not able to edit this file you can run these command in terminal.
+
+Verify that ANDROID_HOME has been set by running:
+
+> echo $ANDROID_HOME 
+
+And verify that the appropriate directories have been added to your path by running:
+
+> echo $PATH.
+
 
