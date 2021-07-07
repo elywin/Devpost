@@ -139,7 +139,7 @@ And verify that the appropriate directories have been added to your path by runn
 
 > react-native init SampleProject
 
-6. Preparing AndroidDevice
+6. Preparing Android Device for development
 
 You will need an Android device to run your ReactNative App. It can be either a physical or virtual Android device.
 
@@ -152,4 +152,20 @@ Click "Next" then "Finish" to create your AVD. At this point you should be able 
 Using a physical device
 
 If you have a physical Android device, you can use it for development in place of an AVD by plugging it in to your computer using a USB cable. Following the instructions: [how to setup physical android device for development](https://reactnative.dev/docs/running-on-device).
+
+7. Run React Native App
+
+Move into the project folder
+
+> cd SampleProject
+
+Start Metro
+
+> react-native start
+
+Open a new terminal tab and run the application.
+
+> react-native run-android
+
+If everything is set up correctly, you should see your new app running in your Android device.
 
