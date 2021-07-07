@@ -51,3 +51,25 @@ Verify npm installation
 
 > curl -0 -L https://npmjs.org/install.sh | sudo sh
 
+3. Install Java Development Kit
+
+First, We have to add Oracle’s Personal Package Archives(PPA)
+
+> sudo add-apt-repository ppa:webupd8team/java
+
+Update your package repository.
+
+> sudo apt update
+
+Install Oracle JDK 1.8(stable) atleast, recommended version for React Native Development but You can install multiple Java Installations in one machine.
+
+> sudo apt install oracle-java8-installer
+
+We will need to set Java 1.8 as default.
+
+> sudo apt install oracle-java8-set-default
+
+Verify java installation
+
+> javac --version
+
