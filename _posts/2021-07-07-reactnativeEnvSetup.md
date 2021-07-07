@@ -135,4 +135,7 @@ And verify that the appropriate directories have been added to your path by runn
 
 > echo $PATH.
 
+5. Creating a Sample application
+
+> react-native init SampleProject
 
