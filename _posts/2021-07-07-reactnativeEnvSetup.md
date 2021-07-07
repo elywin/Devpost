@@ -77,7 +77,7 @@ Verify java installation
 
 Install AndroidStudio
 
-Download and install Android Studio. While on Android Studio installation wizard, make sure the boxes next to all of the following items are checked:
+[Download and install Android Studio](https://developer.android.com/studio). While on Android Studio installation wizard, make sure the boxes next to all of the following items are checked:
 
 - Android SDK
 - Android SDK Platform
@@ -138,4 +138,18 @@ And verify that the appropriate directories have been added to your path by runn
 5. Creating a Sample application
 
 > react-native init SampleProject
+
+6. Preparing AndroidDevice
+
+You will need an Android device to run your ReactNative App. It can be either a physical or virtual Android device.
+
+Using a Virtual Device (emulator)
+
+To do that open the android studio and create a virtual device . and power up AVD(Android Virtual Device). If you have recently installed Android Studio, you will likely need to create a new AVD(Android Virtual Device). Select `Create Virtual Device`, then pick any Phone from the list and click "Next", then select the Q API Level 29 image.
+
+Click "Next" then "Finish" to create your AVD. At this point you should be able to click on the green triangle button next to your AVD(Android Virtual Device) to launch it, then proceed to the next step.
+
+Using a physical device
+
+If you have a physical Android device, you can use it for development in place of an AVD by plugging it in to your computer using a USB cable. Following the instructions: [how to setup physical android device for development](https://reactnative.dev/docs/running-on-device).
 
