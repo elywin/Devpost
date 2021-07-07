@@ -18,46 +18,45 @@ These are the steps we will be following:
 
 Now that the steps are layed out, lets begin the setup.
 
-1. Install Node.JS and npm
+**Install Node.JS and npm**
 
 Let’s move to terminal.
 
-Update apt package manager
+**Update apt package manager**
 
 > sudo apt update 
 
-Install nodejs using apt package manager.
+**Install nodejs using apt package manager.**
 
 > sudo apt install nodejs
 
-Verify nodejs installation
+**Verify nodejs installation**
 
 > nodejs --version
 
-
-Install npm
+**Install npm**
 
 > sudo apt install npm
 
-Verify npm installation
+**Verify npm installation**
 
 > npm --version
 
-2. Install React Native Command Line (CLI)
+**Install React Native Command Line (CLI)**
 
 > npm install -g react-native-cli
 
-**NB:** If you get an error like Cannot find module ‘npmlog’ you can install npm directly using this command. `If the above command run successfully then no need to run this command`.
+**NB:**   If you get an error like Cannot find module ‘npmlog’ you can install npm directly using this command. `If the above command run successfully then no need to run this command`.
 
 > curl -0 -L https://npmjs.org/install.sh | sudo sh
 
-3. Install Java Development Kit
+**Install Java Development Kit**
 
 First, We have to add Oracle’s Personal Package Archives(PPA)
 
 > sudo add-apt-repository ppa:webupd8team/java
 
-Update your package repository.
+**Update your package repository.**
 
 > sudo apt update
 
@@ -69,13 +68,13 @@ We will need to set Java 1.8 as default.
 
 > sudo apt install oracle-java8-set-default
 
-Verify java installation
+**Verify java installation**
 
 > javac --version
 
-4. Setup Android development environment
+**Setup Android development environment**
 
-Install AndroidStudio
+**Install AndroidStudio**
 
 [Download and install Android Studio](https://developer.android.com/studio). While on Android Studio installation wizard, make sure the boxes next to all of the following items are checked:
 
@@ -87,11 +86,11 @@ Then, click "Next" to install all of these components.
 
 Once setup has finalized and you're presented with the Welcome screen, proceed to the next step.
 
-Install the Android SDK
+**Install the Android SDK**
 
 To do that, open Android Studio, click on "Configure" button and select `SDK Manager`.
 
-> **NB:**The SDK Manager can also be found within the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.
+> **NB:**  The SDK Manager can also be found within the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.
 
 Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the Android 10 (Q) entry, then make sure the following items are checked:
 
@@ -102,7 +101,7 @@ Next, select the "SDK Tools" tab and check the box next to "Show Package Details
 
 Finally, click "Apply" to download and install the Android SDK and related build tools.
 
-Configure the ANDROID_HOME environment variable
+**Configure the ANDROID_HOME environment variable**
 
 React Native tools require some environment variables to be set up in order to build apps with native code.
 
@@ -112,11 +111,10 @@ Go to terminal and run command
 
 > $HOME/.bash_profile 
 
-> `Make sure you use the correct Android SDK path. You can find the actual location of the SDK in the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.`
+**NB:**  Make sure you use the correct Android SDK path. You can find the actual location of the SDK in the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.
 
 
 When the file opens add the following lines:
-
 ```
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -124,10 +122,9 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
+ **NB:**  If you not able to edit this file you can run these command in terminal.
 
- **NB:**If you not able to edit this file you can run these command in terminal.
-
-Verify that ANDROID_HOME has been set by running:
+**Verify that ANDROID_HOME has been set by running:**
 
 > echo $ANDROID_HOME 
 
@@ -135,35 +132,35 @@ And verify that the appropriate directories have been added to your path by runn
 
 > echo $PATH.
 
-5. Creating a Sample application
+**Creating a Sample application**
 
 > react-native init SampleProject
 
-6. Preparing Android Device for development
+**Preparing Android Device for development**
 
 You will need an Android device to run your ReactNative App. It can be either a physical or virtual Android device.
 
-Using a Virtual Device (emulator)
+**Using a Virtual Device (emulator)**
 
 To do that open the android studio and create a virtual device . and power up AVD(Android Virtual Device). If you have recently installed Android Studio, you will likely need to create a new AVD(Android Virtual Device). Select `Create Virtual Device`, then pick any Phone from the list and click "Next", then select the Q API Level 29 image.
 
 Click "Next" then "Finish" to create your AVD. At this point you should be able to click on the green triangle button next to your AVD(Android Virtual Device) to launch it, then proceed to the next step.
 
-Using a physical device
+**Using a physical device**
 
 If you have a physical Android device, you can use it for development in place of an AVD by plugging it in to your computer using a USB cable. Following the instructions: [how to setup physical android device for development](https://reactnative.dev/docs/running-on-device).
 
-7. Run React Native App
+**Run React Native App**
 
-Move into the project folder
+**Move into the project folder**
 
 > cd SampleProject
 
-Start Metro
+**Start Metro**
 
 > react-native start
 
-Open a new terminal tab and run the application.
+**Open a new terminal tab and run the application.**
 
 > react-native run-android
 
