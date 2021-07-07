@@ -15,3 +15,29 @@ These are the steps we will be following:
 5. Creating a Sample application
 6. Preparing Android Device (physical or virtual device)
 7. Run React Native App
+
+1. Install Node.JS and npm
+
+Let’s move to terminal.
+
+Update apt package manager
+
+>  sudo apt update 
+
+Install nodejs using apt package manager.
+
+> sudo apt install nodejs
+
+Verify nodejs installation
+
+> nodejs --version
+
+
+Install npm
+
+> sudo apt install npm
+
+Verify npm installation
+
+> npm --version
+
