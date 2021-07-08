@@ -48,7 +48,7 @@ Let’s move to terminal.
 
 **NB:**   If you get an error like Cannot find module ‘npmlog’ you can install npm directly using this command. `If the above command run successfully then no need to run this command`.
 
-> curl -0 -L https://npmjs.org/install.sh | sudo sh
+> curl -0 -L https://npmjs.org/install.sh \| sudo sh
 
 **Install Java Development Kit**
 
