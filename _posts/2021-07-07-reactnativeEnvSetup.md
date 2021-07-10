@@ -42,6 +42,12 @@ Let’s move to terminal.
 
 > npm --version
 
+There are two ways we can set up our mobile application:<br>
+1. Using ReactNative Command Line 
+2. Expo Command Line
+
+# 1.Using ReactNative CLI
+
 **Install React Native Command Line (CLI)**
 
 > npm install -g react-native-cli
@@ -164,5 +170,35 @@ If you have a physical Android device, you can use it for development in place o
 
 > react-native run-android
 
-If everything is set up correctly, you should see your new app running in your Android device.
+If everything is set up correctly, you should see your new app running on your Android device.
 
+# 2.Using Expo CLI
+
+Assuming that you have Node installed, you can use npm to install the Expo CLI command line utility:
+
+**install the Expo CLI**
+
+> npm install -g expo-cli
+
+**Create a new React Native project**
+
+> expo init DemoProject
+
+**Move into the project folder/directory**
+
+> cd DemoProject
+
+**Run the project**
+
+> expo start
+
+The development server will be started for you.
+
+**Running the app on a device ios or android**
+
+Install the [Expo](https://docs.expo.io/) client app on your iOS or Android phone and connect to the same wireless network as your computer.
+
+- On Android, use the Expo app to scan the QR code from your terminal to open your project.
+- On iOS, use the built-in QR code scanner of the Camera app.
+
+If everything is set up correctly, you should see your new app running on your device.
