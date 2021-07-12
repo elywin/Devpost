@@ -3,7 +3,7 @@ layout: post
 title: React-Native Environment setup(Ubuntu)
 ---
 
-**How to Install and Setup React Native on Ubuntu**<br>
+**How to Setup React Native on Ubuntu**<br>
 Hello, In this article, We will learn how to install and setup React Native on Ubuntu.
 
 These are the steps we will be following:
