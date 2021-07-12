@@ -9,7 +9,7 @@ Hello, In this article, We will learn how to install and setup React Native on U
 These are the steps we will be following:
 
 1. Install Node.JS and npm
-2. Install React Native Command Line (CLI)
+2. Install React Native Command Line(CLI)
 3. Install Java Development Kit
 4. Setup Android development environment
 5. Creating a Sample application
@@ -172,7 +172,7 @@ If you have a physical Android device, you can use it for development in place o
 
 If everything is set up correctly, you should see your new app running on your Android device.
 
-# 2.Using Expo Command Line (CLI)
+# 2.Using Expo Command Line(CLI)
 
 Assuming that you have Node installed, you can use npm to install the Expo CLI command line utility:
 
