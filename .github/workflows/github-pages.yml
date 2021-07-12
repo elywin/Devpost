@@ -3,7 +3,7 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - master # or master before October 2020
+      - master
 
 jobs:
   github-pages:
@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
