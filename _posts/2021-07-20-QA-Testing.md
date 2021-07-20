@@ -13,14 +13,13 @@ Before we dive into Quality Assurance, let's understand what quality, assurance 
 Quality Assurance in Software Testing commonly known as `QA-tesing` refers to a procedure or process of ensuring the quality of software products or services provided to the customers by an organization, it focuses on improving the software development process and making it efficient and effective as per the quality standards defined for software products.
 
 **Quality Assurance Complete Process**<br>
-Quality Assurance methodology has a defined cycle called PDCA cycle cycle. The phases of this cycle are:
-
+Quality Assurance methodology has a defined cycle called PDCA cycle:
 - Plan
 - Do
 - Check
 - Act
 
-<img src="/svg/Q2.png" width="500" >
+<!-- <img src="/svg/Q2.png" width="500" > -->
 
 
 These above steps are repeated to ensure that processes followed in the organization are evaluated and improved on a periodic basis.
