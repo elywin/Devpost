@@ -17,6 +17,7 @@ Full Stack Developer: -
 ## Database Management
 - MongoDB
 - MySQL
+- PostgreSQL
 
 ## Other
 - Version control
@@ -31,6 +32,7 @@ Full Stack Developer: -
 
 <td><a href="https://gitlab.com/elywin"><img src="../svg/gitlab2.svg" width="35" height="35"></a></td>
 
+<td><a href="https://stackoverflow.com/users/14765694/elywin"><img src="../svg/stack-overflow.svg" width="35" height="35"></a></td>
 
 <td><a href="https://www.linkedin.com/in/elywin-michael-lukeera-0a84ba127"><img src="../svg/linkedin.svg" width="35" height="35"></a></td>
 
