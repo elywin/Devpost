@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up openVPN in the cloud (AWS)
+title: Setting-up a VPN server in the cloud (AWS)
 ---
 
 We are going to setup a vpn server in the cloud on AWS for free! I repeat for free!.
@@ -17,9 +17,7 @@ Once your all set and logged in, we start setting up the vpn.
 
 2. Scroll down and select launch instance.
 
-    ```
-    You would select the amazon machine image you want from the list provided but the provided images only have the OS installed and that would take more time adding the required resources. but there is a better way.
-    ```
+    >You would select the amazon machine image you want from the list provided but the provided images only have the OS installed and that would take more time adding the required resources. but there is a better way.
 
 3. On the left select AWS Marketplace
     > Here we will have images with already prconfigured tools.
@@ -49,9 +47,9 @@ Once your all set and logged in, we start setting up the vpn.
 
 14. Navigate back to the console where the instance is select it and copy the `IPv4 Public IP` address.
 
-15. Open a new tab in the browser type https://ipv4adress:943/admin. 
+15. Open a new tab in the browser type https://ipv4adress:943/admin
 
-> select advanced and and select proceed.
+    > select advanced and and select proceed.
 
 16. Login with the credentials username: openvpn(incase you didnt change the username) and the password you created. 
 
@@ -59,11 +57,10 @@ Once your all set and logged in, we start setting up the vpn.
 
 **Thats it for the server** 
 
+Lets setup the VPN client for the different platforms.
 
+18. Open a new tab in the browser type https://ipv4adress:943. Login with the same credentials and choose your platform.
 
-	continue
-	free tier eligable t2.micro
-	review launch
-	launch
-	choose existing key pair or create new one
-	right click instance select connect
+> Be sure to follow the instructions for the different platforms as provided.
+
+## Thats it, your vpnserver is up and running, have fun!
