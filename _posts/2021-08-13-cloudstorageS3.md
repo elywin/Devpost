@@ -29,3 +29,17 @@ By default AWS S3 will block all public access to the newly created bucket and t
 
 Click create bucket.
 
+Bucket is successfully created.
+Click on the newly created bucket name.
+
+Select `upload`
+
+Select `Add files`
+
+Scroll down there is a Permissions drop-down. Here you can set permissions on the uploaded object. With the defualt settings, any AWS user or roles within "this" account will be able to access these files as long as their AWS identity and Access Managment policy allows it.
+
+Scroll down and Click on `upload`
+
+To see more details about the objects uploaded click on one of them.
+
+The `Object url` at the bottom is the Amazon S3 URL for this specific object but since we did not enable public access you cant use it. In this case the only way to view an uploaded object would be through the `Open`, or `Download` which automatically generate a temporary signed URL that grants us access to an object for a fe mins(5 mins) before expiring.   
