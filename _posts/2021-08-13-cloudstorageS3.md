@@ -23,3 +23,9 @@ On the S3 dashboard select create bucket
 
 Give your S3 bucket a name and choose a region closest to where your clients are located or near your location if its for personal use.
 
+By default AWS S3 will block all public access to the newly created bucket and the objects we upload to it and will prevent us from accidentally granting access to them later ia access control lists or S3 bucket policies. 
+
+**Note:** ` recomand that you leave the "Block all public access" setting turned ON`. Enabling access to a bucket should only be done when it is absolutely necessary instead use S3 bucket Policies or S3 Access Points to grant limited access to S3 buckets and indiidual objects within.
+
+Click create bucket.
+
