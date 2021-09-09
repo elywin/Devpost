@@ -15,3 +15,11 @@ We are gong to:
 - Delete objects
 - Delete bucket
 
+Step 1
+
+Login to the AWS management console, select services and locate S3 under Storage.
+
+On the S3 dashboard select create bucket 
+
+Give your S3 bucket a name and choose a region closest to where your clients are located or near your location if its for personal use.
+
