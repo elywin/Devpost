@@ -17,7 +17,12 @@ We are gong to:
 
 Login to the AWS management console, select services and locate S3 under Storage.
 
+<img src="/svg/services.png" width="1000" >
+
 On the S3 dashboard select create bucket 
+
+<img src="/svg/createbucket.png" width="1000" >
+
 
 Give your S3 bucket a name and choose a region closest to where your clients are located or near your location if its for personal use.
 
@@ -29,8 +34,12 @@ Click create bucket.
 
 Bucket is successfully created.
 Click on the newly created bucket name.
+<img src="/svg/newbucketname.png" width="1000" >
+
 
 Select `upload`
+
+<img src="/svg/upload.png" width="1000" >
 
 Select `Add files`
 
@@ -40,4 +49,12 @@ Scroll down and Click on `upload`
 
 To see more details about the objects uploaded click on one of them.
 
+<img src="/svg/selectobject.png" width="1000" >
+
+<img src="/svg/objectdetails.png" width="1000" >
+
+
+
 The `Object url` at the bottom is the Amazon S3 URL for this specific object but since we did not enable public access you cant use it. In this case the only way to view an uploaded object would be through the `Open`, or `Download` which automatically generate a temporary signed URL that grants us access to an object for a fe mins(5 mins) before expiring.   
+
+<img src="/svg/upload.png" width="1000" >
