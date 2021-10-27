@@ -67,3 +67,12 @@ Resource management includes:
 - Create a project team and assign responsibilities to every team member.
 - Adjustment of resources.
 - Determining resources required at a particular stage and their availability.
+
+**Project Estimation Management**<br>
+For an effective management accurate estimation of various measures is a must. With correct estimation managers can manage and control the project more efficiently and effectively.
+
+Project estimation may involve the following:
+
+- Effort estimation
+- Time estimation
+- Cost estimation
