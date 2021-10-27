@@ -16,3 +16,12 @@ All activities and tasks undertaken for the purpose of planning and controlling 
 
 **Project Management**<br>
 Application of knowledge, skills, tools and techniques to project activities in order to meet project requirements.
+
+Not forgetting how will al this be managed and by who, lets see some of the stake holders involved.
+
+**Project Stakeholders**
+- Project team
+- Sponser
+- suppliers
+- users
+- Support staff
