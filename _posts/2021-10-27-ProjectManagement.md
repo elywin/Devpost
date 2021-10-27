@@ -36,3 +36,22 @@ For a project to be successful there are prerequisites that need to be met.
 - Estimation Management
 - Project Risk Management
 - Scheduling Management
+
+All these activities are headed by an individual, a project manager, lets see who he is and what he does.
+
+**Project manager**
+
+A project manager is a character who has the overall responsibility for the planning, design, execution, monitoring, controlling and closure of a project.
+
+Responsibilities that a project manager shoulders:
+
+1. Managing People
+- project leader
+- Liaison with stakeholders
+- Managing human resources
+
+2. Managing Project
+- Monitoring progress and performance
+- Risk analysis at every phase
+- Managing project management activities
+- Create the project team and assigns tasks to several team members.
