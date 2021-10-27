@@ -55,3 +55,7 @@ Responsibilities that a project manager shoulders:
 - Risk analysis at every phase
 - Managing project management activities
 - Create the project team and assigns tasks to several team members.
+
+**Project planning**<br>
+Software project planning is task, which is performed before the production of software actually starts.
+
