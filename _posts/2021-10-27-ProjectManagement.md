@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Project Management
+title: Software Project Management
 ---
-**Software Project Management**
 
-**Project Management**
-
+**Project Management**<br>
 Before we dive into it, we need to know what the terms "Project Management" mean and from this we can derive our definition.
 
 **Project**<br>
