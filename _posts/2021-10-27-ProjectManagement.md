@@ -20,8 +20,19 @@ Application of knowledge, skills, tools and techniques to project activities in 
 Not forgetting how will al this be managed and by who, lets see some of the stake holders involved.
 
 **Project Stakeholders**
+
 - Project team
 - Sponser
 - suppliers
 - users
 - Support staff
+
+For a project to be successful there are prerequisites that need to be met.
+
+**Management Prerequisite**
+
+- Project planning
+- Project Resource Management
+- Estimation Management
+- Project Risk Management
+- Scheduling Management
