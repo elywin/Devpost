@@ -59,3 +59,11 @@ Responsibilities that a project manager shoulders:
 **Project planning**<br>
 Software project planning is task, which is performed before the production of software actually starts.
 
+**Project Resource Management**<br>
+Project Resource Management: In software Development, all the elements are referred to as resources for the project. It can be a human resource, productive tools, and libraries.
+
+Resource management includes:
+
+- Create a project team and assign responsibilities to every team member.
+- Adjustment of resources.
+- Determining resources required at a particular stage and their availability.
