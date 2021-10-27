@@ -76,3 +76,19 @@ Project estimation may involve the following:
 - Effort estimation
 - Time estimation
 - Cost estimation
+
+**Project Risk Management**<br>
+Risk management consists of all the activities like identification, analyzing and preparing the plan for predictable and unpredictable risks in the project.
+
+Risks may include the following:
+- Experienced staff leaving the project and new staff coming in.
+- Change in organizational management.
+- Requirement change or misinterpreting requirement.
+- Under-estimation of required time and resources.
+- Technological changes
+
+Risk Management Process
+1. Identification - note all possible risks, which may occur in the project.
+2. Categorize - Categorize known risks into high, medium and low risk intensity as per their possible impact on the project.
+3. Manage - Analyze the probability of occurrence of risks at various phases. Make plan to avoid or face risks.
+4. Monitor - Closely monitor the potential risks and their early symptoms. Also monitor the effects of steps taken to mitigate or avoid them.
