@@ -92,3 +92,16 @@ Risk Management Process
 2. Categorize - Categorize known risks into high, medium and low risk intensity as per their possible impact on the project.
 3. Manage - Analyze the probability of occurrence of risks at various phases. Make plan to avoid or face risks.
 4. Monitor - Closely monitor the potential risks and their early symptoms. Also monitor the effects of steps taken to mitigate or avoid them.
+
+**Project Scheduling Management**
+
+Project Scheduling in a project refers to roadmap of all activities to be done with specified order and within time slot allotted to each activity.
+
+Steps for scheduling a project:
+
+- Break down the project tasks into smaller, manageable form
+- Find out various tasks and correlate them
+- Estimate time frame required for each task
+- Divide time into work-units
+- Assign adequate number of work-units for each task
+- Calculate total time required for the project from start to finish
