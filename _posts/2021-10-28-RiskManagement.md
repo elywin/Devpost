@@ -40,3 +40,6 @@ Operational risk arises from the potential for loss due to significant deficienc
 **Customer misuse of products and services**
 Impulse buying an example of customer misuse, this happens on the user end, it may not occur much in the business however this could be a result of system errors, system novices to curb this we would have to add two-factor authentication
 
+**Reputational risk**
+This is the risk of significant negative public opinion that results in a critical loss of funding or customers. Reputational risk may involve actions that create a lasting negative public image of overall organisation, such that the organisation`s ability to establish and maintain customer relationships is significantly impaired. Reputational risk may also arise if actions by the business cause a major loss of public confidence in the organisation’s ability to perform functions critical to its continued operation.
+
