@@ -37,4 +37,6 @@ Operational risk arises from the potential for loss due to significant deficienc
 - Awareness and culture, our society at this point is rigid to adjust to the changing technology. So getting them to adopt new technologies is a huge risk because some may welcome it while others will be adamant to make the change.
 - Payment conflict as a result of system errors
 
+**Customer misuse of products and services**
+Impulse buying an example of customer misuse, this happens on the user end, it may not occur much in the business however this could be a result of system errors, system novices to curb this we would have to add two-factor authentication
 
