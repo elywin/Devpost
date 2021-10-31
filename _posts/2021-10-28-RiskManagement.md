@@ -14,3 +14,6 @@ The most common business risk categories are:<br>
 - Operational: your operational and administrative procedures
 - Reputational: the character or goodwill of the business.
 - Others include health and safety, project, equipment, security, technology, stakeholder management and service delivery.
+
+**Identify the risk**<br>
+Because of rapid changes in information technology, no list of risks can be exhaustive. Some of the risks and problems an organisation or enterprise may face applies to the activities across the platform.
