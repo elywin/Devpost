@@ -43,3 +43,5 @@ Impulse buying an example of customer misuse, this happens on the user end, it m
 **Reputational risk**
 This is the risk of significant negative public opinion that results in a critical loss of funding or customers. Reputational risk may involve actions that create a lasting negative public image of overall organisation, such that the organisation`s ability to establish and maintain customer relationships is significantly impaired. Reputational risk may also arise if actions by the business cause a major loss of public confidence in the organisation’s ability to perform functions critical to its continued operation.
 
+**Compliance risk**
+This refers to the potential exposure to legal penalties, financial forfeiture and material loss, resulting from its failure to act in accordance with industry laws and regulations, internal policies or prescribed best practices. Compliance risk is also known as integrity risk.
