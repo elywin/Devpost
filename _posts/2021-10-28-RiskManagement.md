@@ -45,3 +45,11 @@ This is the risk of significant negative public opinion that results in a critic
 
 **Compliance risk**
 This refers to the potential exposure to legal penalties, financial forfeiture and material loss, resulting from its failure to act in accordance with industry laws and regulations, internal policies or prescribed best practices. Compliance risk is also known as integrity risk.
+
+**Assess the risk**
+
+After the potential risks have been identified, the project team then evaluates each risk based on the probability that a risk event will occur and the potential loss associated with it. Not all risks are equal. Some risk events are more likely to happen than others, and the cost of a risk can vary greatly. Having criteria to determine high-impact risks can help narrow the focus on a few critical risks that require mitigation.
+
+**Manage the risk**
+
+Having made an assessment of risks and its risk tolerance, the project team should take steps to manage and control risks. This phase of a risk management process includes activities such as implementing security policies and measures, coordinating internal communication, evaluating and upgrading products and services. It ensures that risks are controlled and managed, providing disclosures and customer education, and developing contingency plans.
