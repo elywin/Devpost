@@ -71,3 +71,22 @@ Evaluating products and services before they are introduced on a widespread basi
 **Disclosures and customer education**
 
 Disclosures and customer education may help the organisation limit legal and reputational risk. Disclosures and programs to educate customers that address how to use new products and services, fees charged for services and products, and problem and error resolution procedures can help organisation comply with customer protection and privacy laws and regulations.
+
+**Contingency planning**
+
+The business can limit the risk of disruptions in internal processes or in service or product delivery by developing contingency plans that establish its course of action in the event of a disruption in its provision of services. The plan may address data recovery, alternative data-processing capabilities, emergency staffing, and customer service support. Backup systems should be tested periodically to ensure their continuing effectiveness. 
+
+**Internal communication**
+
+Aspects of operational, reputational, legal, and other risks can be managed and controlled if senior management communicates to key staff how the system is intended to support the overall goals of the business. At the same time, technical staff should clearly communicate to senior management how systems are designed to work, as well as the strengths and weaknesses of systems. Such procedures can reduce operational risks of poor systems design, including incompatibility of different systems software, data integrity problems, reputational risk associated with customer dissatisfaction that systems did not work as expected.
+
+**Monitor and review**
+
+For example an E-platform or E-business activities, monitoring is particularly important both because the nature of the activities are likely to change rapidly as innovations occur, and because of the reliance of the system on the use of open networks such as the Internet.
+
+**System testing and surveillance**
+
+Testing of systems operations can help detect unusual activity patterns and avert major system problems, disruptions, and attacks. Penetration testing focuses upon the identification,
+isolation, and confirmation of flaws in the design and implementation of security mechanisms
+through controlled attempts to penetrate a system outside normal procedures. Surveillance is a form of monitoring in which software and audit applications are used to track activity focusing on monitoring routine operations, investigating anomalies, and making ongoing judgements regarding the effectiveness of security.
+
