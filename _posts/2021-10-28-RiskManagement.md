@@ -53,3 +53,14 @@ After the potential risks have been identified, the project team then evaluates 
 **Manage the risk**
 
 Having made an assessment of risks and its risk tolerance, the project team should take steps to manage and control risks. This phase of a risk management process includes activities such as implementing security policies and measures, coordinating internal communication, evaluating and upgrading products and services. It ensures that risks are controlled and managed, providing disclosures and customer education, and developing contingency plans.
+
+**Security policies and measures**
+
+Security is the combination of systems, applications, and internal controls used to safeguard the integrity, authenticity, and confidentiality of data and operating processes. Proper security relies on the development and implementation of adequate security policies and security measures for processes within the system, and for communication between the system and external parties.
+
+Security policies and measures can limit the risk of external and internal attacks on systems, as well as the reputational risk arising from security breaches. 
+
+A security policy states management support information security and provides an explanation of the business`s security organisation. It also establishes guidelines that define the business’s security risk tolerance. The policy may define responsibilities for designing, implementing, and enforcing information security measures, and it may establish procedures to evaluate policy compliance, enforce disciplinary measures, and report security violations.
+
+Business can choose from a variety of security measures to prevent or mitigate external and internal attacks and misuse of the system. Such measures include, for example, encryption, passwords, firewalls, virus controls, and employee screening.
+
