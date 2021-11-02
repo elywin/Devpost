@@ -64,3 +64,10 @@ A security policy states management support information security and provides an
 
 Business can choose from a variety of security measures to prevent or mitigate external and internal attacks and misuse of the system. Such measures include, for example, encryption, passwords, firewalls, virus controls, and employee screening.
 
+**Evaluating and upgrading**
+
+Evaluating products and services before they are introduced on a widespread basis can also help limit operational and reputational risks. Testing validates that equipment and systems function properly and produce the desired results. Pilot programs or prototypes can be helpful in developing new applications. The risk of system slowdowns or disruptions can also be reduced by policies to review the capabilities of existing hardware and software regularly.
+
+**Disclosures and customer education**
+
+Disclosures and customer education may help the organisation limit legal and reputational risk. Disclosures and programs to educate customers that address how to use new products and services, fees charged for services and products, and problem and error resolution procedures can help organisation comply with customer protection and privacy laws and regulations.
