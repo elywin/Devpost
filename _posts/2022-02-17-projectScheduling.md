@@ -2,6 +2,7 @@
 layout: post
 title: Project Scheduling
 ---
+
 **Project Scheduling**<br>
 The policies, procedures and documentation that the project team is to put in place to ensure that the development of a project is completed on time.
 
