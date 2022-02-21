@@ -104,7 +104,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  jekyll (~> 3.4)
+  jekyll (~> 3.9.1)
   jekyll-feed (~> 0.12)
   jekyll-remote-theme
   jekyll-theme-hydeout (~> 4.1)

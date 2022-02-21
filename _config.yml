@@ -27,7 +27,6 @@ url: "https://elywin.github.io" # the base hostname & protocol for your site, e.
 twitter_username: jekyllrb
 github_username:  jekyll
 remote_theme: fongandrew/hydeout
-# Build settings
 theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
