@@ -13,7 +13,7 @@ along with thier options. However once a user gets to know how to navigate the c
 bound to be more productive providing the user with control, greater speed, and abiity to automate tasks more easily though
 scripting.
 
-**Understanding the commandline**
+# Understanding the Command Line
 
 **What is a Command Line?**<br>
 You can call it a program that opens a window and lets you interact with the shell. 
