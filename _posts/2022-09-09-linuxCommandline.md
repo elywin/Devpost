@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Linux Commandline
+title: Linux Command Line
 ---
 
-# Why the command line?!?!
+# Why the Command Line?!?!
+
 - greater control of an OS or application;
 - faster management of many operating systems;
 - ability to store scripts to automate regular tasks
@@ -22,5 +23,8 @@ You can call it a program that opens a window and lets you interact with the she
 
 A comand line is simply a text-based interface to the computer where you can type commands, manipulate files, execute programs, and open documents.
 
-**Navigation**
+**Navigation**<br>
+Like Windows, the files on a Linux system are arranged in what is called a hierarchical directory structure. This means that they are organized in a tree-like pattern of directories (called folders in other systems), which may contain files and subdirectories. The first directory in the file system is called the root directory which contains files and subdirectories, which contain more files and subdirectories......
+
+At any given moment, we are located in a single directory. Inside that directory, we can see its files and the pathway to its parent directory and the pathways to the subdirectories of the directory in which we are standing called the working directory. To see the name of the working directory, we use  `pwd`(print working directory) command.
 
