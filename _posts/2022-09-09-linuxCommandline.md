@@ -28,3 +28,9 @@ Like Windows, the files on a Linux system are arranged in what is called a hiera
 
 At any given moment, we are located in a single directory. Inside that directory, we can see its files and the pathway to its parent directory and the pathways to the subdirectories of the directory in which we are standing called the working directory. To see the name of the working directory, we use  `pwd`(print working directory) command.
 
+{image}
+
+To change the current working directory we use the `cd` command. To do this, we type cd followed by the pathname of the desired working directory. A pathname is the route we take along the branches of the directory tree to get to the directory we want.
+
+
+{image}
