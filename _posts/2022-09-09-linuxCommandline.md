@@ -32,4 +32,5 @@ At any given moment, we are located in a single directory. Inside that directory
 
 To change the current working directory we use the `cd` command. To do this, we type cd followed by the pathname of the desired working directory. A pathname is the route we take along the branches of the directory tree to get to the directory we want.
 
+
 {image}
