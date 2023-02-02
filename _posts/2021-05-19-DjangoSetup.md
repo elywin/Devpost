@@ -87,7 +87,7 @@ Move into the project directory
 
 Create the django app
 
-> pyhton3 manage.py startapp app_name
+> python3 manage.py startapp app_name
 
 Once that is done, go to settings.py file, under INSTALLED _APPS add 'app_name'
 
