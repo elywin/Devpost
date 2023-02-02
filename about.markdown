@@ -11,9 +11,8 @@ Elywin Michael Lukeera, A full-stack Developer , a lifelong student of society s
 - ReactJs
 - Laravel
 - Django
-- React-N
-ative
-- NodeJS/
+- React-Native
+- NodeJS
 
 ## Database Management
 - MongoDB
@@ -24,7 +23,7 @@ ative
 - Version control
 - Wordpress
 - AWS
-
+- Embedded systems
 
 ## Contact
 
