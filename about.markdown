@@ -14,6 +14,7 @@ Elywin Michael Lukeera, A full-stack Developer , a lifelong student of society s
 - React-Native
 - NodeJS
 - Springboot
+- Flutter
 
 ## Database Management
 - MongoDB
@@ -24,6 +25,8 @@ Elywin Michael Lukeera, A full-stack Developer , a lifelong student of society s
 - Version control
 - Wordpress
 - AWS
+- DevOps
+- Kubernetes administration
 - Embedded systems
 
 ## Contact
